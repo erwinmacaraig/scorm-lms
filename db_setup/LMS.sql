@@ -24,13 +24,13 @@ CREATE TABLE tblCourseUserRelation(
 )engine=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 INSERT INTO tblScormCourse VALUES 
-(0, 'Employee Health and Wellness (Sample Course)', 'health/scormdriver/indexAPI.html'),
-(0, 'Golf Explained - Run-time Basic Calls', 'golf/shared/launchpage.html');
+(1, 'Employee Health and Wellness (Sample Course)', 'health/scormdriver/indexAPI.html'),
+(2, 'Golf Explained - Run-time Basic Calls', 'golf/shared/launchpage.html');
 
 INSERT INTO tblCourseUserRelation VALUES 
- (0, 1, 1, NOW()),
- (0, 1, 2, NOW()),
- (0, 2, 1, NOW()),
- (0, 2, 2, NOW()),
- (0, 3, 1, NOW()),
- (0, 3, 2, NOW());
+ (1, 1, 1, NOW()),
+ (2, 1, 2, NOW()),
+ (3, 2, 1, NOW()),
+ (4, 2, 2, NOW()),
+ (5, 3, 1, NOW()),
+ (6, 3, 2, NOW());

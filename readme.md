@@ -10,7 +10,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 Please follow the steps below to setup the development environment on your local machine.
 
-
 After downloading the repository source code, install the necessary npm packages
 ```
 npm install
@@ -19,6 +18,17 @@ npm install
 Install grunt (task runner) globally.
 ```
 npm install -g grunt
+```
+
+Do not forget to put on the necessary values for the database connection settings found at /dist/config/db.json
+
+```
+{
+    "host": "localhost",
+    "user": "",
+    "password": "",
+    "database": "EvacScorm"
+}
 ```
 
 Create your database that will serve as your learning record store, i.e
