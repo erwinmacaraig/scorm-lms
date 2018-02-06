@@ -52,8 +52,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("default", [
     "copy",
-    "ts",
-    "watch"
+    "ts"
   ]);
 
 };
