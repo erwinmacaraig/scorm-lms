@@ -1,0 +1,23 @@
+{
+  "version": "3.11.14249.0",
+  "scenes": [
+    {
+      "title": "Main Content"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6N4hPBVGSVB",
+      "title": "Interactive Graphic",
+      "scene_index": "1.1"
+    }
+  ],
+  "player": {
+    "width": 740,
+    "height": 425
+  },
+  "stage": {
+    "width": 720,
+    "height": 405
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SCORM Launcher</title>
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css" />
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="LRS.js" type="text/javascript"></script>
+<script src="API.js" type="text/javascript"></script>
+<script src="js/bootstrap/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+	var currentCourseWin;
+	var ctrl = false;
+    function launch() {
+        user =  $('#intUserId option:selected').val();
+		course = $('#intCourseId option:selected').val();		
+		//store user and course
+		var course_details = LRS.initialize(user, course);
+		user_course_relation = course_details.intCourseUserRelationId;
+		currentCourseWin = window.open(course_details.strCourseLauncher);
+	}
+	
+
+</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Scorm Course Launcher</h1>
+		</div>
+		<div class="row">
+			<div class="pull-left" >
+
+					<div class="form-group">
+						<label for="user_id">User ID</label>
+						<select id="intUserId" name="intUserId">
+							<option value="0">Select User</option>
+							<option value="1">Erwin</option>
+							<option value="2">Jen</option>
+							<option value="3">Jay</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="intCourseId">Course</label>
+						<select id="intCourseId" name="intCourseId">
+							<option value="0">Select Course</option>
+							<option value="1">Employee Health and Wellness (Sample Course)</option>
+							<option value="2">Golf Explained - Run-time Basic Calls</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+					<button class="btn btn-primary" id="launcherBtn" onclick="launch();">Launch Course</button>
+					</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
