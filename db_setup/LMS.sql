@@ -25,7 +25,9 @@ CREATE TABLE tblCourseUserRelation(
 
 INSERT INTO tblScormCourse VALUES 
 (1, 'Employee Health and Wellness (Sample Course)', 'health/scormdriver/indexAPI.html'),
-(2, 'Golf Explained - Run-time Basic Calls', 'golf/shared/launchpage.html');
+(2, 'Golf Explained - Run-time Basic Calls', 'golf/shared/launchpage.html'),
+(3, 'Evac Training Course', 'evac/index_lms.html'),
+(4, 'Test Evac Training Course', 'test/index_lms.html');
 
 INSERT INTO tblCourseUserRelation VALUES 
  (1, 1, 1, NOW()),
@@ -33,4 +35,10 @@ INSERT INTO tblCourseUserRelation VALUES
  (3, 2, 1, NOW()),
  (4, 2, 2, NOW()),
  (5, 3, 1, NOW()),
- (6, 3, 2, NOW());
+ (6, 3, 2, NOW()),
+ (7, 1, 3, NOW()),
+ (8, 2, 3, NOW()),
+ (9, 3, 3, NOW()),
+ (10, 1, 4, NOW()),
+ (11, 2, 4, NOW()),
+ (12, 3, 4, NOW());
